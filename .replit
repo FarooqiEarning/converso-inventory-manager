@@ -40,3 +40,9 @@ waitForPort = 5000
 
 [agent]
 integrations = ["javascript_websocket:1.0.0"]
+
+[userenv]
+
+[userenv.shared]
+VITE_SUPABASE_URL = "https://okmgehmtneobtxwnciaa.supabase.co"
+VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9rbWdlaG10bmVvYnR4d25jaWFhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM2MTc1NDUsImV4cCI6MjA3OTE5MzU0NX0.eEs6di3ZKn9nf3aUFklViMl2xb7lcaCMrQo-I6ykQwg"
