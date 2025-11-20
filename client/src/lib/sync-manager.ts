@@ -215,3 +215,6 @@ async function syncCreditTransaction(
 export function getOnlineStatus() {
   return isOnline;
 }
+
+// Re-export for convenience
+export { getPendingSyncItems } from './db';
