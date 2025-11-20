@@ -4,3 +4,9 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+.env.local
+.env.*.local
+.vscode
+.idea
+.env.*
+.env

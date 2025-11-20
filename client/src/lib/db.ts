@@ -43,7 +43,7 @@ export async function addToSyncQueue(type: 'sale' | 'inventory' | 'payment', dat
 }
 
 export async function getPendingSyncItems() {
-  return await db.syncQueue.where('synced').equals(false).toArray();
+  return await db.syncQueue.filter(item => item.synced === false).toArray();
 }
 
 export async function markSynced(id: number) {
@@ -51,5 +51,5 @@ export async function markSynced(id: number) {
 }
 
 export async function clearSyncedItems() {
-  await db.syncQueue.where('synced').equals(true).delete();
+  await db.syncQueue.where('type').notEqual('').filter(item => item.synced === true).delete();
 }
